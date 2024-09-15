@@ -4,7 +4,7 @@ export default function Home() {
   const [ws, setWs] = createSignal<WebSocket>();
 
   createEffect(() => {
-    const ws = new WebSocket("ws://localhost:3000/_ws");
+    const ws = new WebSocket("ws://startling-pavlova-0a9bcb.netlify.app/_ws");
     ws.onopen = () => {
       console.log("WebSocket opened client");
     };
